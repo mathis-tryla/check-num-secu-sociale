@@ -1,0 +1,471 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>NIR Site Officiel</title>
+
+	<style type="text/css">
+
+		body{
+			background-color: rgb(204,255,204);
+		}
+
+		h2{
+			font-family: COPPERPLATE;
+		}
+
+		b{
+			color: red;
+		}
+
+		p, li{
+			font-family: Chalkboard;
+			color: rgb(24,82,172);
+		}
+
+		#imageHaut{
+			width: 300px;
+			height: 150px;
+		}
+
+		#urssaf{
+			position: absolute;
+			right: 10px;
+			width: 300px;
+			height: 150px;
+			margin-right: 1%;
+
+		}
+
+		#corse{
+			width: 6%;
+		}
+
+		#checkVert, #checkVert1{
+			width: 7%;
+		}
+
+		#fauxCroix, #fauxCroix1{
+			width: 6%;
+		}
+
+		#carteVitale{
+			width: 22%;
+		}
+
+		#homer, #bulle{
+			width: 12%;
+		}
+
+		#bulle{
+			position: absolute;
+			top: 380px;
+			left: 530px;
+		}
+
+		#saisieNIR{
+			width: 150px;
+		}
+
+		#saisieClé{
+			width: 50px;
+		}
+
+		#affichageRésultatClé, #affichageRésultatSexe, #affichageRésultatDateNaissance, #affichageRésultatLieuNaissance, #affichageRésultatAge{
+			color: rgb(24,82,172);
+			font-family: Chalkboard;
+		}
+
+		.premierRectangle, .deuxièmeRectangle, .troisièmeRectangle, .quatrièmeRectangle {
+			border: 1px hidden white;
+			border-radius: 3%;
+			width: 1050px;
+			background-color: white;
+			padding: 1px 10px 3px 10px;
+		}
+
+		.cinquièmeRectangle, .sixièmeRectangle{
+			border: 5px dotted rgb(24,82,172);
+			border-radius: 3%;
+			background-color: white;
+			width: 400px;
+			padding: 1px 10px 3px 10px;
+		}
+
+		.discussionBulle{
+			font-size: 12px;
+			font-family: Chalkboard;
+			position: absolute;
+			top: 405px;
+			left: 537px;
+			z-index: 1;
+		}
+
+		.petit{
+			font-size: 5pt;
+		}
+
+		input[type="text"]{
+			text-align: center;
+			border: 2px ridge rgb(24,82,172);
+			color: rgb(24,82,172);
+			font-family: Chalkboard;
+			font-size: 13pt;
+
+		}
+
+		input[type="button"]{
+			font-family: COPPERPLATE;
+			background-color: rgb(24,82,172);
+			color: white;
+		}
+
+	</style>
+
+	</head>
+	<body>
+
+	<i><p class="discussionBulle"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Oh punaise! <br> C'est quoi tous ces chiffres ?</p></i>
+
+		<img src="recrulex-logo_cpam1.png" id="imageHaut" alt="Assurance maladie"/>
+		<img src="https://www.urssaf.fr/portail/files/live/modules/urssafTemplates/2.0.9/files/Logos/logo.svg" id="urssaf" alt="logo URSSAF"/>
+
+			<br><br><br>
+
+		<center><div class="premierRectangle">
+			<h2><li><u>Qu'est-ce que le NIR ?</u></li></h2>
+
+				<br>
+
+			<p>NIR signifie <b>N</b>uméro d'<b>I</b>nscription au <b>R</b>épertoire de l'INSEE. Ce numéro de 15 chiffres est autrement appelé "<b>numéro de sécurité sociale</b>". Il figure en bas de votre carte vitale. Les <b>deux derniers chiffres</b> forment ce qu'on appelle la "<b>clé NIR</b>" qui permet de vérifier si les 13 chiffres précèdemment rentrés sont correctes. Elle peut aller de <b>01</b> à <b>97</b>.</p>
+
+				<br><br>
+
+			<img src="http://www.decoandme.com/images-produits/p2351~1.jpg" id="bulle" alt="Bulle de discussion"/>
+
+				<br><br>
+
+			<img src="https://i.pinimg.com/736x/18/52/7c/18527cc5123283c0b56b8b5dd3b2d509--los-simpsons-homer-simpson.jpg" id="homer" alt="Homer Simpson étonné"/>
+
+		</div></center>
+
+			<br><br><br><br>
+
+		<center><div class="deuxièmeRectangle">
+			<h2><li><u> A quoi correspondent tous ces chiffres ? </u></li></h2>
+
+				<br>
+
+			<img src="https://www.e-ventail.fr/ss/Satellite?blobcol=urldata&blobheader=image%2Fgif&blobheadername1=Content-Disposition&blobheadername2=MDT-Type&blobheadervalue1=inline%3B+filename%3Didentification_NIR.gif&blobheadervalue2=abinary%3B+charset%3DUTF-8&blobkey=id&blobtable=MungoBlobs&blobwhere=5311781883945&ssbinary=true" id="correspondanceNuméros" alt="Les correspondances de chaque numéro"/>
+
+				<br><br>
+
+			<p>Le schéma ci-dessus nous montre la signification de chaque numéros. Ces numéros apparaissent comme ceux encadrés sur cette carte vitale comme ci-dessous:</p>
+
+				<br><br>
+
+			<img src="gmqxc0kVRWeBwFSiUjTU+g_thumb_d2.jpg" id="carteVitale"/>
+		</div></center>
+
+			<br><br><br><br>
+
+		<center><div class="troisièmeRectangle">
+			<h2><li><u> Comment calculer la clé ? </u></li></h2>
+
+				<br>
+
+			<p>L'image ci-dessous est un exemple de calcul de la <b>clé NIR</b>:
+
+				<br><br>
+
+			<img src="http://static.blogs.sciencesetavenir.fr/media/732/divis1.4.png" id="divisionEuclidienne" alt="Division Euclidienne"/>
+
+				<br><br>
+
+			<p>Pour calculer la clé, il faut <b>prendre le reste</b> de la <b>division</b> euclidienne des <b>13 premiers chiffres du NIR</b> par <b>97</b>, puis le <b>soustraire à 97</b>: le résultat de cette soustraction est la <b>clé NIR</b>.
+			<br> Sur cet exemple ci-dessus, la clé NIR est 97-47 = 50.</p>
+		</div></center>
+
+			<br><br><br><br>
+
+		<center><div class="quatrièmeRectangle">
+			<h2><li><u> Exception Corse </u></li></h2>
+
+				<br>
+
+			<img src="http://1.bp.blogspot.com/-bpXNuVZ0vFQ/UqMIB03S-ZI/AAAAAAAA1Zg/31ZmvS_ky6E/s1600/Corsica-Shield-2_375in.png" id="corse" alt="symbole Corse"/>
+
+				<br><br>
+
+			<p>Pour nos "<i>amis</i>" les Corses dont on s'est préoccupés pour accepter la prise en compte du 2A et du 2B dans le NIR, et qui maintenant veulent devenir indépendants, le calcul de clé est différent: &nbsp; <ul>
+										<li>si le département est <b>2A</b>, alors on remplace le <b>A</b> par un <b>0</b> puis on soustrait aux 13 premiers chiffres du NIR la valeur <b>1 000 000</b></li>
+										<li>si le département est <b>2B</b>, alors on remplace le <b>B</b> par un <b>0</b> puis on soustrait aux 13 premiers chiffres du NIR la valeur <b>2 000 000</b></li>
+
+		</div></center>
+
+			<br><br><br><br>
+
+		<center><div class="cinquièmeRectangle">
+
+			<h2><li><u> Testez votre NIR </u></li></h2>
+			<br>
+				<input type="text" id="saisieNIR"/><br><br>
+				<input type="button" id="saisieVérif" value="Vérification du numéro rentré"/><br><br>
+				<img src="Check-vert.png" id="checkVert"/>
+				<img src="croix-rouge-logo-1560x1548.png" id="fauxCroix"/><br><br>
+				<input type="text" id="saisieClé"/><br><br>
+				<input type="button" id="calculClé" value="Calculer la clé"/><br><br>
+				<img src="Check-vert.png" id="checkVert1"/>
+				<img src="croix-rouge-logo-1560x1548.png" id="fauxCroix1"/><br>
+
+
+				<input type="button" id="affichageInformations" value="Afficher vos informations personnelles"/><br><br>
+
+			<div id="affichageRésultatClé"></div><br>
+			<div id="affichageRésultatSexe"></div><br>
+			<div id="affichageRésultatDateNaissance"></div><br>
+			<div id="affichageRésultatLieuNaissance"></div><br>
+			<div id="affichageRésultatAge"></div>
+
+
+		</div></center>
+
+			<br><br><br><br>
+
+		<center><div class="sixièmeRectangle">
+
+			<h2><u> NIR M.Coste </u></h2>
+			<br>
+				<p> Après avoir effectué des</p> <p class="petit"><i>tests au hasard</i></p><p>, j'en déduis que votre NIR est:
+				<br><br>
+				<b>1791063113112 57</b>
+				<br><br>
+				Vous êtes donc né en <b>Octobre 1979</b>: vous avez donc <b>38 ans</b>.</p>
+		</div></center>
+
+
+	</body>
+
+	<script type="text/javascript">
+
+		document.getElementById('saisieVérif').addEventListener('click', vérifierLaSaisieDesDeuxNuméros);
+		document.getElementById('calculClé').addEventListener('click', calculerLaClé);
+		document.getElementById('affichageInformations').addEventListener('click', afficherLesInfosPersoDeLUtilisateur);
+
+		document.getElementById('checkVert').style.display = 'none';
+		document.getElementById('checkVert1').style.display = 'none';
+		document.getElementById('fauxCroix').style.display = 'none';
+		document.getElementById('fauxCroix1').style.display = 'none';
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function vérifierLaSaisieDesDeuxNuméros() {
+	var NIR; // stocke les 13 premiers chiffres du NIR
+	NIR = document.getElementById('saisieNIR').value;
+
+	for(NIR.length = 0; NIR.length > 0; NIR.length++){
+		if(NIR.length <= 12){
+			alert('Le nombre rentré est trop court.');
+			document.getElementById('fauxCroix').style.display = 'block';
+			document.getElementById('checkVert').style.display = 'none';
+			break;
+		}
+		else if(NIR.length >= 14){
+			alert('Le nombre rentré est trop long.');
+			document.getElementById('fauxCroix').style.display = 'block';
+			break;
+		}
+		else if(NIR.length == 13){
+			alert('Le NIR rentré sans la clé est correcte. \n Appuyez sur le bouton Calculer la clé pour continuer.');
+			document.getElementById('checkVert').style.display = 'block';
+			document.getElementById('fauxCroix').style.display = 'none';
+			break;
+
+		}
+	}
+
+	if(NIR.length <= 12 || NIR.length >= 14){
+		document.getElementById('saisieNIR').style.color = "red";
+	}
+	else if(NIR.length == 13){
+		document.getElementById('saisieNIR').style.color = "green";
+	}
+}
+///////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////
+function calculerLaClé() {
+
+	NIR = document.getElementById('saisieNIR').value;
+
+	var cléNIR; // correspond aux 2 derniers chiffres du NIR
+
+	cléNIR = 97 - (NIR%97); // formule du calcul de clé de NIR
+
+	var message = "<u>Voici la clé du NIR rentré</u>: &nbsp;";
+
+	document.getElementById('affichageRésultatClé').innerHTML = message + cléNIR;
+
+	if(cléNIR<10){
+		document.getElementById('affichageRésultatClé').innerHTML = message + "0" + cléNIR;
+		// comme une clé NIR est composée de 2 chiffres
+		// je place un 0 avant le résultat si ce dernier est à 1 chiffre
+	}
+
+
+	if(document.getElementById('saisieClé').value != cléNIR){
+		alert('La clé que vous avez saisie n\'est pas correcte.');
+		document.getElementById('checkVert1').style.display = 'none';
+		document.getElementById('fauxCroix1').style.display = 'block';
+		document.getElementById('saisieClé').style.color = "red";
+	}
+
+
+
+	else{
+		alert('La clé saisie est correcte. \n Appuyez sur le bouton suivant pour plus d\'informations sur vous.');
+		document.getElementById('checkVert1').style.display = 'block';
+		document.getElementById('fauxCroix1').style.display = 'none';
+		document.getElementById('saisieClé').style.color = "green";
+	}
+
+
+
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function afficherLesInfosPersoDeLUtilisateur() {
+
+	var infos = new Array();  // je crée un tableau dans le quel je stocke le NIR rentré
+
+	infos = NIR.split('');  // je découpe le NIR rentré
+
+	if(infos[0] == 1){      // condition créée pour savoir si c'est homme ou femme
+		document.getElementById('affichageRésultatSexe').innerHTML = "<u>Sexe</u> : &nbsp; Homme";
+	} else if(infos[0] == 2){
+		document.getElementById('affichageRésultatSexe').innerHTML = "<u>Sexe</u> : &nbsp; Femme";
+	}
+
+	annéeNaissance = infos[1]+infos[2];
+	moisNaissance = infos[3]+infos[4];
+
+	/////////////////////////////////////////////////////////////////////
+	if(annéeNaissance > 17 && moisNaissance == "01"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Janvier &nbsp;" + "19" + annéeNaissance;
+
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "02"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Février &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "03"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Mars &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "04"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u>: &nbsp;" + "Avril &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "05"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Mai &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "06"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Juin &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "07"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Juillet &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "08"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Août &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "09"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Septembre &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "10"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Octobre &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "11"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Novembre &nbsp;" + "19" + annéeNaissance;
+	}
+
+	else if(annéeNaissance > 17 && moisNaissance == "04"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Décembre &nbsp;" + "19" + annéeNaissance;
+	}
+
+	/////////////////////////////////////////////////////////////////////
+	if(annéeNaissance <= 17 && moisNaissance == "01"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Janvier &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "02"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Février &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "03"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Mars &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "04"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Avril &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "05"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Mai &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "06"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Juin &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "07"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Juillet &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "08"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Août &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "09"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Septembre &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "10"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Octobre &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "11"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Novembre &nbsp;" + "20" + annéeNaissance;
+	}
+
+	else if(annéeNaissance <= 17 && moisNaissance == "12"){
+		document.getElementById('affichageRésultatDateNaissance').innerHTML = "<u>Date de Naissance</u> : &nbsp;" + "Décembre &nbsp;" + "20" + annéeNaissance;
+	}
+	////////////////////////////////////////////////////////////////////
+
+	document.getElementById('affichageRésultatLieuNaissance').innerHTML = "<u>Lieu de Naissance</u> : &nbsp;  ";
+
+
+	var âge; // pour calculer l'âge de l'utilisateur
+
+	if(annéeNaissance > 17){
+		âge = 2017 - parseInt("19"+annéeNaissance);
+	}
+
+	else if(annéeNaissance <= 17){
+		âge = 2017 - parseInt("20"+annéeNaissance);
+	}
+
+
+	document.getElementById('affichageRésultatAge').innerHTML = "<u>Age</u> : &nbsp; " + âge;
+
+}
+///////////////////////////////////////////////////////////////////
+	</script>
+</html>
